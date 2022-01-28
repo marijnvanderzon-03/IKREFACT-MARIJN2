@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b078c92d-a730-4ac2-a39e-a58f06aed9f8" name="Changes" comment="tickets werken, je kan nu tickets ophalen en versturen via de backend">
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microService/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microService/src/main/java/AfkoAPI/AfkoApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microService/src/main/java/AfkoAPI/Controller/BlacklistController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microService/src/main/java/AfkoAPI/DAO/BlacklistDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microService/src/main/java/AfkoAPI/HTTPResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microService/src/main/java/AfkoAPI/Model/BlacklistEntry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microService/src/main/java/AfkoAPI/Repository/BlacklistRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microService/src/main/java/AfkoAPI/services/TrimListService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microService/src/main/java/AfkoAPI/services/WebClientManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monolith/src/main/java/AfkoAPI/services/HTTPEndpoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monolith/src/main/java/AfkoAPI/services/HTTPService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/AfkoApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/Controller/AbbreviationController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/Controller/AccountController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/Controller/BlacklistController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/Controller/OrganisationController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/Controller/ScoreController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/Controller/TicketController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/DAO/AbbreviationDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/DAO/AccountDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/DAO/BlacklistDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/DAO/OrganisationDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/DAO/ScoreDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/DAO/TicketDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/HTTPResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/Model/Abbreviation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/Model/Account.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/Model/BlacklistEntry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/Model/Organisation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/Model/Player.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/Model/TempAbbreviation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/Model/Ticket.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/Repository/AbbreviationRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/Repository/AccountRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/Repository/BlacklistRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/Repository/OrganisationRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/Repository/ScoreRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/Repository/TempAbbreviationRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/Repository/TicketRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/RequestObjects/AbbreviationRequestObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/RequestObjects/AccountRequestObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/RequestObjects/AccountReturnObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/RequestObjects/OrganisationRequestObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/RequestObjects/ScoreRequestObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/RequestObjects/TicketRequestObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/jwt/JwtAuthenticationEntryPoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/jwt/JwtRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/jwt/JwtRequestFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/jwt/JwtResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/jwt/JwtTokenUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/jwt/JwtUserDetailsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/jwt/WebSecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/services/AccountService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/services/BlacklistService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/services/OrganisationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/services/TrimListService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AfkoAPI/AbbreviationControllerTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AfkoAPI/AfkoApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AfkoAPI/TicketDaoTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AfkoAPI/TrimListServiceTest.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="JPA Inspector" value="true" />
+        <entry key="JPA Palette" value="true" />
+        <entry key="JPA Structure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="JPA Inspector" value="false" />
+        <entry key="JPA Palette" value="false" />
+        <entry key="JPA Structure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectId" id="206GajeccU4JzFGP4QzV3djXj0k" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenDatabaseViewOnStart" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../IPSENNE10" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.54367816" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\schoolFiles\IKREFACT-MARIJN\monolith\src\main" />
+      <recent name="C:\Users\User\schoolFiles\IKREFACT-MARIJN\monolith\src\main\java\AfkoAPI\services" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.AfkoApplication">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="IKREFACT-MARIJN" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AfkoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="AfkoAPI.AfkoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b078c92d-a730-4ac2-a39e-a58f06aed9f8" name="Changes" comment="" />
+      <created>1635357690633</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1635357690633</updated>
+      <workItem from="1635357692048" duration="2675000" />
+      <workItem from="1635418638282" duration="14611000" />
+      <workItem from="1636105711870" duration="734000" />
+      <workItem from="1636120036043" duration="30000" />
+      <workItem from="1636194169682" duration="626000" />
+      <workItem from="1636209275337" duration="2282000" />
+      <workItem from="1636369566236" duration="1418000" />
+      <workItem from="1636461786406" duration="965000" />
+      <workItem from="1636464793868" duration="1834000" />
+      <workItem from="1636535245144" duration="695000" />
+      <workItem from="1636622395537" duration="540000" />
+      <workItem from="1636622986824" duration="371000" />
+      <workItem from="1637052720054" duration="175000" />
+      <workItem from="1638264816590" duration="195000" />
+      <workItem from="1639210555717" duration="88000" />
+      <workItem from="1639213174462" duration="6475000" />
+      <workItem from="1640257677957" duration="18336000" />
+      <workItem from="1640783391709" duration="1277000" />
+      <workItem from="1641996402727" duration="527000" />
+      <workItem from="1641996959118" duration="127000" />
+      <workItem from="1642755024720" duration="2711000" />
+      <workItem from="1643028403234" duration="591000" />
+      <workItem from="1643362590481" duration="219000" />
+      <workItem from="1643362826662" duration="162000" />
+      <workItem from="1643363011906" duration="3046000" />
+    </task>
+    <task id="LOCAL-00001" summary="added api implementation to select reported abbreviations">
+      <created>1635408088050</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1635408088050</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added api implementation to put information and delete abbreviations">
+      <created>1636037961788</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1636037961788</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fixed deleting from Abbreviation_Organisation as well as Abbreviation">
+      <created>1636367297758</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1636367297758</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added ticket to db and made the backend implementation of ticket">
+      <created>1640272311210</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1640272311210</updated>
+    </task>
+    <task id="LOCAL-00005" summary="tickets werken, je kan nu tickets ophalen en versturen via de backend">
+      <created>1640349218710</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1640349218710</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added api implementation to select reported abbreviations" />
+    <MESSAGE value="added api implementation to put and delete abbreviations" />
+    <MESSAGE value="added api implementation to put information and delete abbreviations" />
+    <MESSAGE value="fixed deleting from Abbreviation_Organisation as well as Abbreviation" />
+    <MESSAGE value="added ticket to db and made the backend implementation of ticket" />
+    <MESSAGE value="tickets werken, je kan nu tickets ophalen en versturen via de backend" />
+    <option name="LAST_COMMIT_MESSAGE" value="tickets werken, je kan nu tickets ophalen en versturen via de backend" />
+  </component>
+</project>
