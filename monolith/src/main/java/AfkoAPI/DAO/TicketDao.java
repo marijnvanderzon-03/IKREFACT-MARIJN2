@@ -21,8 +21,7 @@ public class TicketDao {
     TempAbbreviationRepository tempAbbrRep;
     @Autowired
     AbbreviationRepository abbreviationRepository;
-    @Autowired
-    BlacklistRepository blacklistRepository;
+
     @Autowired
     AccountRepository accountRepository;
     @Autowired

@@ -1,12 +1,12 @@
-package HTTPService;
+package AfkoAPI.services;
 
+import AfkoAPI.exceptions.APICallFailureException;
+import AfkoAPI.exceptions.NoHTTPTokenException;
+import AfkoAPI.exceptions.UnsuccesfullHTTPRequestException;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import exceptions.APICallFailureException;
-import exceptions.NoHTTPTokenException;
-import exceptions.UnsuccesfullHTTPRequestException;
 import okhttp3.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -17,7 +17,7 @@ import java.util.HashMap;
 public class HTTPService<T> {
     private static final Logger logger = LogManager.getLogger(HTTPService.class);
 
-    public final String API_URL = "http://localhost:8080/";
+    public final String API_URL = "http://localhost:8081/";
     private final OkHttpClient client = new OkHttpClient();
     private HTTPEndpoint endPoint;
     // save the generic type for use at runtime: https://stackoverflow.com/questions/3437897/how-do-i-get-a-class-instance-of-generic-type-t
@@ -55,9 +55,9 @@ public class HTTPService<T> {
     }
 
 
-    protected T getRequest(HashMap<String, String> para) throws APICallFailureException, NoHTTPTokenException, UnsuccesfullHTTPRequestException {
+    protected T getRequest(HashMap<String, String> para) throws UnsuccesfullHTTPRequestException, APICallFailureException {
         if (token == null)
-            throw new NoHTTPTokenException();
+            return null;
 
         StringBuilder url = new StringBuilder(API_URL + endPoint.toString() + "?");
 
@@ -130,7 +130,11 @@ public class HTTPService<T> {
                 .url(url)
                 .build();
 
-        sendRequest(client.newCall(request));
+        try {
+            sendRequest(client.newCall(request));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     protected T getDataFromPayload(String payload) throws APICallFailureException {

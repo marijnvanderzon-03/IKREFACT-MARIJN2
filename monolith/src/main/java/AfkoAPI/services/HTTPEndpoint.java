@@ -1,7 +1,8 @@
-package HTTPService;
+package AfkoAPI.services;
 
 public enum HTTPEndpoint {
-    BLACKLIST("/blacklist");
+    BLACKLIST("/blacklist"),
+    CKECKBLACKLIST("/blacklist/check");
 
 
     private String value;

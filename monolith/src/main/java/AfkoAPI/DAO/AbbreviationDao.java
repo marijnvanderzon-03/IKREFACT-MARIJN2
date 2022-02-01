@@ -5,10 +5,9 @@ import AfkoAPI.Model.Abbreviation;
 import AfkoAPI.Model.Account;
 import AfkoAPI.Repository.AbbreviationRepository;
 import AfkoAPI.Repository.AccountRepository;
-import AfkoAPI.Repository.BlacklistRepository;
 import AfkoAPI.Repository.OrganisationRepository;
 import AfkoAPI.RequestObjects.AbbreviationRequestObject;
-import AfkoAPI.services.BlacklistService;
+import AfkoAPI.services.BlacklistCheckService;
 import AfkoAPI.services.TrimListService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -21,8 +20,7 @@ public class AbbreviationDao {
 
     @Autowired
     AbbreviationRepository abbrRep;
-    @Autowired
-    BlacklistRepository blacklistRepository;
+
     @Autowired
     AccountRepository accountRepository;
     @Autowired
@@ -54,14 +52,25 @@ public class AbbreviationDao {
      * @param abbr the abbreviation to add
      * @return HTTPResponse
      */
-    public HTTPResponse<Abbreviation> addAbbreviation(AbbreviationRequestObject abbr) {
+    public HTTPResponse<Abbreviation> addAbbreviation(AbbreviationRequestObject abbr){
 
         Optional<Account> acc = accountRepository.findById(abbr.getAccountId());
         if (acc.isEmpty())
             return HTTPResponse.<Abbreviation>returnFailure("could not find account with id: " + abbr.getAccountId());
 
         Abbreviation a = new Abbreviation(abbr.getName(), abbr.getDescription(), abbr.getOrganisations(), acc.get());
-        return BlacklistService.filterAbbreviationAndSaveToRepository(blacklistRepository, abbrRep, a);
+        BlacklistCheckService Bservice = new BlacklistCheckService();
+        try {
+            if(Bservice.checkAbbrInBlacklist(abbr.getName()) == false){
+                abbrRep.save(a);
+                return HTTPResponse.returnSuccess(a);
+            }else{
+                return HTTPResponse.returnFailure("fout bij blacklist");
+            }
+        } catch (Exception e) {
+            return HTTPResponse.returnFailure("1");
+        }
+
     }
 
     /**
@@ -145,8 +154,8 @@ public class AbbreviationDao {
 
         Abbreviation afko = new Abbreviation(newObject.getName(),
                                              newObject.getDescription(),
-                                             newObject.getCreatedBy(),
                                              newObject.getOrganisations(),
+                                             newObject.getCreatedBy(),
                                              newObject.isUnderReview());
         afko.setId(old.getId());
         abbrRep.save(afko);

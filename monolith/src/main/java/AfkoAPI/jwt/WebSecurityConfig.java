@@ -41,7 +41,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
             "/organisation_with_id",
             "/blacklist",
             "/ticket/**",
-            "/account"
+            "/account",
+            "/blacklist/check"
     };
 
     @Autowired

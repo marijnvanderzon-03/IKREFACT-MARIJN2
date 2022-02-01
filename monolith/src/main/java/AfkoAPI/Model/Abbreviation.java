@@ -41,7 +41,7 @@ public class Abbreviation {
         this.id = UUID.randomUUID().toString();
     }
 
-    public Abbreviation(String name, String description, Set<Organisation> orgs, Account createdBy) {
+    public Abbreviation(String name, String description, Set<Organisation> orgs, Account createdBy, boolean isUnderReview) {
         this.name = name;
         this.description = description;
         if (orgs != null) this.organisations = orgs;

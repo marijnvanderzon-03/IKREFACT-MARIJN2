@@ -5,11 +5,8 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import java.util.Comparator;
 
-@Entity
-@Table(name = "blacklist_entry")
-public class BlacklistEntry {
 
-    @Id
+public class BlacklistEntry {
     private String entry;
 
     protected BlacklistEntry() {}

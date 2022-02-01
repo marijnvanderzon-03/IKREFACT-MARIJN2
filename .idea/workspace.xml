@@ -4,78 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b078c92d-a730-4ac2-a39e-a58f06aed9f8" name="Changes" comment="tickets werken, je kan nu tickets ophalen en versturen via de backend">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microService/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microService/src/main/java/AfkoAPI/AfkoApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microService/src/main/java/AfkoAPI/Controller/BlacklistController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microService/src/main/java/AfkoAPI/DAO/BlacklistDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microService/src/main/java/AfkoAPI/HTTPResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microService/src/main/java/AfkoAPI/Model/BlacklistEntry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microService/src/main/java/AfkoAPI/Repository/BlacklistRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microService/src/main/java/AfkoAPI/services/TrimListService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microService/src/main/java/AfkoAPI/services/WebClientManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/monolith/src/main/java/AfkoAPI/services/HTTPEndpoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/monolith/src/main/java/AfkoAPI/services/HTTPService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/AfkoApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/Controller/AbbreviationController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/Controller/AccountController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/Controller/BlacklistController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/Controller/OrganisationController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/Controller/ScoreController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/Controller/TicketController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/DAO/AbbreviationDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/DAO/AccountDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/DAO/BlacklistDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/DAO/OrganisationDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/DAO/ScoreDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/DAO/TicketDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/HTTPResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/Model/Abbreviation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/Model/Account.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/Model/BlacklistEntry.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/Model/Organisation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/Model/Player.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/Model/TempAbbreviation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/Model/Ticket.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/Repository/AbbreviationRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/Repository/AccountRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/Repository/BlacklistRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/Repository/OrganisationRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/Repository/ScoreRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/Repository/TempAbbreviationRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/Repository/TicketRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/RequestObjects/AbbreviationRequestObject.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/RequestObjects/AccountRequestObject.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/RequestObjects/AccountReturnObject.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/RequestObjects/OrganisationRequestObject.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/RequestObjects/ScoreRequestObject.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/RequestObjects/TicketRequestObject.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/jwt/JwtAuthenticationEntryPoint.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/jwt/JwtRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/jwt/JwtRequestFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/jwt/JwtResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/jwt/JwtTokenUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/jwt/JwtUserDetailsService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/jwt/WebSecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/services/AccountService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/services/BlacklistService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/services/OrganisationService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AfkoAPI/services/TrimListService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AfkoAPI/AbbreviationControllerTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AfkoAPI/AfkoApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AfkoAPI/TicketDaoTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AfkoAPI/TrimListServiceTest.java" beforeDir="false" />
+    <list default="true" id="b078c92d-a730-4ac2-a39e-a58f06aed9f8" name="Changes" comment="commit">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_4_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_2_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_13_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_1_5_31.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_common_1_5_31.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monolith/src/main/java/AfkoAPI/exceptions/APICallFailureException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monolith/src/main/java/AfkoAPI/exceptions/CouldNotAddAbbreviationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monolith/src/main/java/AfkoAPI/exceptions/CouldNotAddScoreException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monolith/src/main/java/AfkoAPI/exceptions/NoHTTPTokenException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monolith/src/main/java/AfkoAPI/exceptions/UnsuccesfullHTTPRequestException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monolith/src/main/java/AfkoAPI/services/BlacklistCheckService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/IKREFACT-MARIJN.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/IKREFACT-MARIJN.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice/src/main/java/AfkoAPI/Controller/BlacklistController.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/src/main/java/AfkoAPI/Controller/BlacklistController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice/src/main/java/AfkoAPI/DAO/BlacklistDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice/src/main/java/AfkoAPI/DAO/BlacklistDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monolith/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/monolith/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monolith/src/main/java/AfkoAPI/Controller/BlacklistController.java" beforeDir="false" afterPath="$PROJECT_DIR$/monolith/src/main/java/AfkoAPI/Controller/BlacklistController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monolith/src/main/java/AfkoAPI/DAO/AbbreviationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/monolith/src/main/java/AfkoAPI/DAO/AbbreviationDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monolith/src/main/java/AfkoAPI/DAO/BlacklistDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/monolith/src/main/java/AfkoAPI/DAO/TicketDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/monolith/src/main/java/AfkoAPI/DAO/TicketDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monolith/src/main/java/AfkoAPI/Model/Abbreviation.java" beforeDir="false" afterPath="$PROJECT_DIR$/monolith/src/main/java/AfkoAPI/Model/Abbreviation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monolith/src/main/java/AfkoAPI/Model/BlacklistEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/monolith/src/main/java/AfkoAPI/Model/BlacklistEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monolith/src/main/java/AfkoAPI/Repository/BlacklistRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/monolith/src/main/java/AfkoAPI/jwt/JwtRequestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/monolith/src/main/java/AfkoAPI/jwt/JwtRequestFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monolith/src/main/java/AfkoAPI/jwt/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/monolith/src/main/java/AfkoAPI/jwt/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monolith/src/main/java/AfkoAPI/services/BlacklistService.java" beforeDir="false" afterPath="$PROJECT_DIR$/monolith/src/main/java/AfkoAPI/services/BlacklistService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monolith/src/main/java/AfkoAPI/services/HTTPEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/monolith/src/main/java/AfkoAPI/services/HTTPEndpoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monolith/src/main/java/AfkoAPI/services/HTTPService.java" beforeDir="false" afterPath="$PROJECT_DIR$/monolith/src/main/java/AfkoAPI/services/HTTPService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,8 +88,9 @@
     <property name="RunOnceActivity.OpenDatabaseViewOnStart" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/microservice" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -142,11 +102,12 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\schoolFiles\IKREFACT-MARIJN\monolith\src\main\java\AfkoAPI" />
       <recent name="C:\Users\User\schoolFiles\IKREFACT-MARIJN\monolith\src\main" />
       <recent name="C:\Users\User\schoolFiles\IKREFACT-MARIJN\monolith\src\main\java\AfkoAPI\services" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.AfkoApplication">
+  <component name="RunManager" selected="Spring Boot.AfkoApplication (1)">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="IKREFACT-MARIJN" />
@@ -154,9 +115,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AfkoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="demo" />
+    <configuration name="AfkoApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="IKREFACT-MARIJN" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="AfkoAPI.AfkoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AfkoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="SPRING_BOOT_MAIN_CLASS" value="AfkoAPI.AfkoApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -200,7 +169,7 @@
       <workItem from="1643362590481" duration="219000" />
       <workItem from="1643362826662" duration="162000" />
       <workItem from="1643363011906" duration="3046000" />
-      <workItem from="1643368471249" duration="384000" />
+      <workItem from="1643368471249" duration="8003000" />
     </task>
     <task id="LOCAL-00001" summary="added api implementation to select reported abbreviations">
       <created>1635408088050</created>
@@ -237,11 +206,122 @@
       <option name="project" value="LOCAL" />
       <updated>1640349218710</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="commit">
+      <created>1643368906849</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1643368906849</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
+    <option featureType="dependencySupport" implementationName="java:org.slf4j:jul-to-slf4j" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.xml.bind:jakarta.xml.bind-api" />
+    <option featureType="dependencySupport" implementationName="java:org.javassist:javassist" />
+    <option featureType="dependencySupport" implementationName="java:org.hamcrest:hamcrest-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.security:spring-security-web" />
+    <option featureType="dependencySupport" implementationName="java:com.zaxxer:HikariCP" />
+    <option featureType="dependencySupport" implementationName="java:com.squareup.okhttp3:okhttp" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
+    <option featureType="dependencySupport" implementationName="java:net.minidev:accessors-smart" />
+    <option featureType="dependencySupport" implementationName="java:com.google.code.gson:gson" />
+    <option featureType="dependencySupport" implementationName="java:org.aspectj:aspectjweaver" />
+    <option featureType="dependencySupport" implementationName="java:com.fasterxml:classmate" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.tomcat.embed:tomcat-embed-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-test" />
+    <option featureType="dependencySupport" implementationName="java:com.fasterxml.jackson.datatype:jackson-datatype-jsr310" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate:hibernate-core" />
+    <option featureType="dependencySupport" implementationName="java:org.glassfish.jaxb:jaxb-runtime" />
+    <option featureType="dependencySupport" implementationName="java:org.skyscreamer:jsonassert" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.tomcat.embed:tomcat-embed-websocket" />
+    <option featureType="dependencySupport" implementationName="java:ch.qos.logback:logback-classic" />
+    <option featureType="dependencySupport" implementationName="java:org.glassfish.jaxb:txw2" />
+    <option featureType="dependencySupport" implementationName="java:org.mockito:mockito-junit-jupiter" />
+    <option featureType="dependencySupport" implementationName="java:org.opentest4j:opentest4j" />
+    <option featureType="dependencySupport" implementationName="java:org.objenesis:objenesis" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-tx" />
+    <option featureType="dependencySupport" implementationName="java:org.junit.jupiter:junit-jupiter" />
+    <option featureType="dependencySupport" implementationName="java:junit:junit" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-jcl" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-web" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-starter-logging" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-starter-aop" />
+    <option featureType="dependencySupport" implementationName="java:ch.qos.logback:logback-core" />
+    <option featureType="dependencySupport" implementationName="java:org.checkerframework:checker-qual" />
+    <option featureType="dependencySupport" implementationName="java:com.fasterxml.jackson.core:jackson-databind" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.logging.log4j:log4j-to-slf4j" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-starter" />
+    <option featureType="dependencySupport" implementationName="java:org.jboss.logging:jboss-logging" />
+    <option featureType="dependencySupport" implementationName="java:org.slf4j:slf4j-api" />
+    <option featureType="dependencySupport" implementationName="java:org.ow2.asm:asm" />
+    <option featureType="dependencySupport" implementationName="java:org.jetbrains.kotlin:kotlin-stdlib-common" />
+    <option featureType="dependencySupport" implementationName="java:antlr:antlr" />
+    <option featureType="dependencySupport" implementationName="java:org.yaml:snakeyaml" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-autoconfigure" />
+    <option featureType="dependencySupport" implementationName="java:org.postgresql:postgresql" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-test-autoconfigure" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-starter-json" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-expression" />
+    <option featureType="dependencySupport" implementationName="java:com.fasterxml.jackson.datatype:jackson-datatype-jdk8" />
+    <option featureType="dependencySupport" implementationName="java:org.jetbrains.kotlin:kotlin-stdlib" />
+    <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
+    <option featureType="dependencySupport" implementationName="java:org.assertj:assertj-core" />
+    <option featureType="dependencySupport" implementationName="java:com.fasterxml.jackson.module:jackson-module-parameter-names" />
+    <option featureType="dependencySupport" implementationName="java:com.vaadin.external.google:android-json" />
+    <option featureType="dependencySupport" implementationName="java:org.apiguardian:apiguardian-api" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-jdbc" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-starter-jdbc" />
+    <option featureType="dependencySupport" implementationName="java:org.mockito:mockito-core" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.transaction:jakarta.transaction-api" />
+    <option featureType="dependencySupport" implementationName="java:net.bytebuddy:byte-buddy" />
+    <option featureType="dependencySupport" implementationName="java:org.xmlunit:xmlunit-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-starter-security" />
+    <option featureType="dependencySupport" implementationName="java:org.junit.jupiter:junit-jupiter-params" />
+    <option featureType="dependencySupport" implementationName="java:org.hamcrest:hamcrest" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-starter-data-jpa" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-commons" />
+    <option featureType="dependencySupport" implementationName="java:org.junit.platform:junit-platform-engine" />
+    <option featureType="dependencySupport" implementationName="java:net.bytebuddy:byte-buddy-agent" />
+    <option featureType="dependencySupport" implementationName="java:org.jboss:jandex" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-aspects" />
+    <option featureType="dependencySupport" implementationName="java:org.dom4j:dom4j" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-starter-test" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-beans" />
+    <option featureType="dependencySupport" implementationName="java:com.jayway.jsonpath:json-path" />
+    <option featureType="dependencySupport" implementationName="java:com.squareup.okio:okio" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate.common:hibernate-commons-annotations" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.security:spring-security-config" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.security:spring-security-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-jpa" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.activation:jakarta.activation-api" />
+    <option featureType="dependencySupport" implementationName="java:org.junit.jupiter:junit-jupiter-engine" />
+    <option featureType="dependencySupport" implementationName="java:io.jsonwebtoken:jjwt" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
+    <option featureType="dependencySupport" implementationName="java:org.jetbrains:annotations" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.security:spring-security-crypto" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-starter-tomcat" />
+    <option featureType="dependencySupport" implementationName="java:com.fasterxml.jackson.core:jackson-annotations" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-test" />
+    <option featureType="dependencySupport" implementationName="java:com.fasterxml.jackson.core:jackson-core" />
+    <option featureType="dependencySupport" implementationName="java:org.junit.platform:junit-platform-commons" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.annotation:jakarta.annotation-api" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-orm" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-context" />
+    <option featureType="dependencySupport" implementationName="java:com.sun.istack:istack-commons-runtime" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-aop" />
+    <option featureType="dependencySupport" implementationName="java:org.junit.jupiter:junit-jupiter-api" />
+    <option featureType="dependencySupport" implementationName="java:net.minidev:json-smart" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-starter-web" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.tomcat.embed:tomcat-embed-el" />
+    <option featureType="dependencySupport" implementationName="java:com.sun.activation:jakarta.activation" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.logging.log4j:log4j-api" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -262,6 +342,7 @@
     <MESSAGE value="fixed deleting from Abbreviation_Organisation as well as Abbreviation" />
     <MESSAGE value="added ticket to db and made the backend implementation of ticket" />
     <MESSAGE value="tickets werken, je kan nu tickets ophalen en versturen via de backend" />
-    <option name="LAST_COMMIT_MESSAGE" value="tickets werken, je kan nu tickets ophalen en versturen via de backend" />
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
 </project>

@@ -20,6 +20,7 @@ public class BlacklistDao {
      * @param maxAmount the max amount of rows to return
      * @return HTTPResponse containing the returned data
      */
+
     public HTTPResponse getBlacklist(String maxAmount) {
         TrimListService<BlacklistEntry> service = new TrimListService<>();
         List<BlacklistEntry> data = repository.findAll();
@@ -92,5 +93,15 @@ public class BlacklistDao {
             return HTTPResponse.<BlacklistEntry>returnFailure("could not find entry: " + entry.getEntry());
         repository.delete(data.get());
         return HTTPResponse.<BlacklistEntry>returnSuccess(entry);
+    }
+
+    public HTTPResponse checkInBlacklist(String abbr){
+        List<BlacklistEntry>blacklist = repository.findAll();
+        for (BlacklistEntry entry: blacklist){
+            if (abbr.contains(entry.getEntry())){
+                return HTTPResponse.returnSuccess(true);
+            }
+        }
+        return HTTPResponse.returnSuccess(false);
     }
 }

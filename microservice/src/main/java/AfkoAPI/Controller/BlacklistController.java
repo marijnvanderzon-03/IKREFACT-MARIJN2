@@ -32,4 +32,9 @@ public class BlacklistController {
     public HTTPResponse removeBlacklistEntries(@RequestBody BlacklistEntry[] entries) {
         return dao.removeMultipleFromBlacklist(entries);
     }
+
+    @GetMapping("/blacklist/check")
+    public HTTPResponse checkInBlacklsit(@RequestParam(name = "abbr") String abbr) {
+        return dao.checkInBlacklist(abbr);
+    }
 }

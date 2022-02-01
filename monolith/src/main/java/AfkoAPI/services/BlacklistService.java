@@ -1,25 +1,39 @@
 package AfkoAPI.services;
 
 import AfkoAPI.HTTPResponse;
-import AfkoAPI.Model.Abbreviation;
 import AfkoAPI.Model.BlacklistEntry;
-import AfkoAPI.Repository.AbbreviationRepository;
-import AfkoAPI.Repository.BlacklistRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
-import java.util.List;
 
-public class BlacklistService {
+@Service
+public class BlacklistService extends HTTPService<BlacklistEntry[]>{
 
-    /** checks if an abbreviation contains words from the blacklist, adds it to the database if it does not otherwise returns HTTPResult FAILURE
-     * @param blacklistRepository the blacklistRepository
-     * @param abbreviationRepository the abbreviationRepository
-     * @param abbr the abbreviation to check and add
-     * @return HTTPResponse SUCCESS or FAILURE
-     */
-    public boolean checkAbbrInBlacklist(String abbr) throws Exception {
-        HashMap<String, String> urlBuild = new HashMap<>();
-        urlBuild.put("abbreviation", abbr);
-        return getRequest(urlBuild);
+    protected BlacklistService() {
+        super(HTTPEndpoint.BLACKLIST, BlacklistEntry[].class);
+    }
+
+    public void addToBlacklist(BlacklistEntry[] entries){
+        try {
+            postRequest(entries);
+        } catch (Exception e) {
+            e.printStackTrace();
+            }
+    }
+
+    public void editBlacklistEntry(BlacklistEntry[] entries) {
+        try {
+            putRequest(entries);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void removeBlacklistEntries(BlacklistEntry[] entries) {
+        try {
+            deleteRequest(entries);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
